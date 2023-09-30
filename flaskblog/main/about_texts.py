@@ -54,7 +54,7 @@ links = [
      lazy_gettext("(code analysis in Czech)")),
 
     (lazy_gettext("Code in readable form (English)"),
-     'https://github.com/',
+     'https://github.com/Sudip2708/poustovnik-english.git',
      '_blank',
      lazy_gettext("(code in English transcribed into readable notation)")),
 
