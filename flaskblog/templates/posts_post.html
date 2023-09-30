@@ -1,0 +1,170 @@
+<!-- Page for one post and edits -->
+
+<!-- Connection to layout: -->
+{% extends "layout.html" %}
+{% block content %}
+
+    <!-- Main container for the page's content: -->
+    <article class="media content-section">
+
+        <!-- Sub-container for the page's content: -->
+        <div class="media-body">
+
+            <!-- Container for grouping profile picture, author name and post date: -->
+            <div class="article-metadata row justify-content-between m-1">
+
+                <!-- Container for grouping profile picture and author's username: -->
+                <div class="row">
+
+                    <!-- Author's profile picture: -->
+                    <img class="rounded-circle article-img mb-1 ml-2"
+                         src="{{ url_for('static', filename='profile_pictures/' + post.author.profile_picture) }}">
+
+                    <!-- Author's username: -->
+                    <a class="align-self-end mb-1"
+                       href="{{ url_for('posts.user_posts', username=post.author.username) }}">
+                        {{ post.author.username }}
+                    </a>
+                </div>
+
+                <!-- Container for post date: -->
+                <div class="row">
+                    <small class="align-self-end mb-1 mr-3 text-muted">
+                        {{ post.date_posted.strftime("%Y-%m-%d") }}
+                    </small>
+                </div>
+            </div>
+
+            <!-- Container for grouping post title and post content: -->
+            <div class="article-metadata mt-3">
+
+                <!-- Condition for displaying the post if it is translated: -->
+                {% if translate[0] == post.id %}
+
+                    <!-- Post title: -->
+                    <h2><a class="article-title" href="{{ url_for('posts.post', post_id=post.id) }}">
+                        {{ translate[1] }}
+                    </a></h2>
+
+                    <!-- Post content: -->
+                    <p class="article-content">{{ translate[2] }}</p>
+
+                <!-- Condition for displaying the post if it is NOT translated: -->
+                {% else %}
+
+                    <!-- Post title: -->
+                    <h2 class="article-title">{{ post.title }}</h2>
+
+                    <!-- Post content: -->
+                    <p class="article-content">{{ post.content }}</p>
+
+                {% endif %}
+
+                <!-- Condition for displaying the post translation link: -->
+                {% if post.language != language %}
+
+                    <!-- Container for the post translation link: -->
+                    <small class="text-muted">
+
+                        <!-- Condition for displaying if the post is translated: -->
+                        {% if translate[0] == post.id %}
+
+                            <!-- Link to return the original text: -->
+                            <a href="{{ url_for('posts.post', post_id=post.id) }}">{{ _("Back to original") }}</a>
+
+                        <!-- Condition for displaying if the post is NOT translated: -->
+                        {% else %}
+
+                            <!-- Link to translation: -->
+                            <a href="{{ url_for('main.translate', post_id=post.id) }}">{{ _("Translate") }}</a>
+
+                        {% endif %}
+                    </small>
+                {% endif %}
+            </div>
+
+            <!-- Condition for displaying post editing tools (if the user is the author of the post): -->
+            {% if post.author == current_user %}
+
+                <!-- Container for grouping left and right buttons: -->
+                <div class="d-flex justify-content-between mt-3 mb-3">
+
+                    <!-- Container for grouping left buttons: -->
+                    <div class="mt-1 mb-1">
+
+                        <!-- Edit post button: -->
+                        <a class="btn btn-secondary"
+                           href="{{ url_for('posts.update_post', post_id=post.id) }}">
+                            {{ _("Update") }}
+                        </a>
+
+                        <!-- Delete post button: -->
+                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal">
+                            {{ _("Delete") }}
+                        </button>
+
+                    </div>
+
+                    <!-- Container for right button -->
+                    <div>
+
+                        <!-- Go back button: -->
+                        <button class="btn btn-outline-secondary mt-1" type="button" onclick="history.back()">
+                            {{ _("Back") }}
+                        </button>
+
+                    </div>
+                </div>
+
+            <!-- Condition for NOT displaying post editing tools (if the user is NOT the author of the post): -->
+            {% else %}
+
+                <!-- Go back button: -->
+                <button class="btn btn-outline-secondary mt-3 mb-3" type="button" onclick="history.back()">
+                    {{ _("Back") }}
+                </button>
+
+            {% endif %}
+        </div>
+    </article>
+
+    <!-- Main container for the delete confirmation popup: -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog"
+         aria-labelledby="deleteModalLabel" aria-hidden="true">
+
+        <!-- Sub-container for the delete confirmation popup: -->
+        <div class="modal-dialog" role="document">
+
+            <!-- Container for grouping popup title and buttons: -->
+            <div class="modal-content">
+
+                <!-- Container for popup title: -->
+                <div class="modal-header">
+
+                    <!-- Popup title: -->
+                    <h5 class="modal-title" id="deleteModalLabel">{{ _("Delete Post?") }}</h5>
+
+                    <!-- Cross button to close the popup window: -->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <!-- Container for grouping buttons: -->
+                <div class="modal-footer">
+
+                    <!-- Close window button: -->
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        {{ _("Close") }}
+                    </button>
+
+                    <!-- Delete a post button: -->
+                    <form action="{{ url_for('posts.delete_post', post_id=post.id) }}" method="POST">
+                        <input class="btn btn-danger" type="submit" value={{ _("Delete") }}>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

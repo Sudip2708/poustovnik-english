@@ -1,0 +1,145 @@
+/* CSS for additional styling of page content */
+/* (the main part of styling is set via Bootstrap) */
+
+/* Style for yellow background (to make the element visible). */
+.ybg {
+    background: yellow;
+}
+
+/* Style for setting the appearance of the user name in the side panel (side_panel). */
+.sp-name {
+    font-size: 1.3em;
+}
+
+/* Style for setting the size of the input field (create_post). */
+.input-hight {
+    height: 200px
+}
+
+/* .Style for placing the flag for switching the localization of the page (layout). */
+.lang-flag {
+    margin: 0em 0.2em 0.0em 0.8em;
+}
+
+/* Style for setting the main title of the page (layout). */
+.fs {
+    font-size: 1.3em;
+    margin: 0em 0.9em 0.2em 0.1em;
+}
+
+/* Style for the appearance of the user picture upload button (account). */
+/* (:file-selector-button = pseudo element representing input button) */
+.fileUpload::file-selector-button {
+    border: 1px solid grey;
+    padding: 0.2em 0.4em;
+    border-radius: 0.2em;
+}
+
+/* Style for the appearance of the user picture upload button (account). */
+/* (:file-selector-button = pseudo element representing the input button) */
+/* (:hover = setting the appearance when hovering the mouse over the element) */
+.fileUpload::file-selector-button:hover {
+    background-color: dark-grey;
+    border: 2px solid #00cec9;
+}
+
+/* Style for the appearance of the entire body of the page. */
+body {
+    background: #fafafa;
+    color: #333333;
+    margin-top: 5rem;
+}
+
+/* Style for all headings. */
+h1, h2, h3, h4, h5, h6 {
+    color: #444444;
+}
+
+/* Style for the container grouping the navigation part of the bar (layout). */
+.bg-steel {
+    background-color: #5f788a;
+}
+
+/* Style for container for page content header and navigation bar (layout). */
+.site-header .navbar-nav .nav-link {
+    color: #cbd5db;
+}
+
+/* Style for container for page content header and navigation bar (layout). */
+/* (:hover = setting the appearance when hovering the mouse over the element) */
+.site-header .navbar-nav .nav-link:hover {
+    color: #ffffff;
+}
+
+/* Style for container for page content header and navigation bar (layout). */
+/* (.active = appearance settings when the mouse is clicked over the element) */
+.site-header .navbar-nav .nav-link.active {
+    font-weight: 500;
+}
+
+/* Style for containers to insert content into the page. */
+.content-section {
+    background: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+/* Style for title (home, post, user_posts). */
+.article-title {
+    color: #444444;
+}
+
+/* Style for title (home, post, user_posts). */
+/* (:hover = setting the appearance when hovering the mouse over the element) */
+a.article-title:hover {
+    color: #428bca;
+    text-decoration: none;
+}
+
+/* Style for post content (home, post, user_posts). */
+.article-content {
+    white-space: pre-line;
+}
+
+/* Style for author profile image (home, post, user_posts). */
+.article-img {
+    height: 65px;
+    width: 65px;
+    margin-right: 16px;
+}
+
+/* Style for container combining author name and post date (home, post, user_posts). */
+.article-metadata {
+    padding-bottom: 1px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid #e3e3e3
+}
+
+/* Style for container combining author name and post date (home, post, user_posts). */
+/* (:hover = setting the appearance when hovering the mouse over the element) */
+.article-metadata a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+/* SVG filter settings. */
+.article-svg {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+/* Style for the profile image of the author (account). */
+.account-img {
+    height: 125px;
+    width: 125px;
+    margin-right: 20px;
+    margin-bottom: 16px;
+}
+
+/* Style for username (account). */
+.account-heading {
+    font-size: 2.5rem;
+}

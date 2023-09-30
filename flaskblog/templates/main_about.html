@@ -1,0 +1,38 @@
+<!-- About page -->
+
+<!-- Connection to layout: -->
+{% extends "layout.html" %}
+{% block content %}
+
+    <!-- Container for the introductory section: -->
+    <div class="media">
+
+        <!-- Container for title and subtitle: -->
+        <div class="media-body">
+            <h2 class="account-heading">{{ _("About this page") }}</h2>
+            <p class="text-secondary mt-3">{{ _("First of all, thank you for visiting") }}</p>
+
+        </div>
+
+        <!-- Profile picture: -->
+        <img class="rounded-circle account-img"
+             src="{{ url_for('static', filename='profile_pictures/' + user.profile_picture) }}">
+
+    </div>
+
+    <!-- Cycle through the texts to display: -->
+    {% for title, content in text %}
+
+        <!-- Main container for the title and text content: -->
+        <article class="media">
+
+            <!-- Sub-container for the title and text content:-->
+            <div class="media-body mb-4">
+                <h6>{{ title }}</h6>
+                <p class="article-content mt-3">{{ content }}</p>
+            </div>
+
+        </article>
+    {% endfor %}
+{% endblock content %}
+

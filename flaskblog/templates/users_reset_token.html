@@ -1,0 +1,94 @@
+<!-- Page to change user password from email token -->
+
+<!-- Connection to layout: -->
+{% extends "layout.html" %}
+{% block content %}
+
+    <!-- Container for page content: -->
+    <div class="content-section">
+
+        <!-- Container for the page form: -->
+        <form method="POST" action="">
+
+            <!-- Hidden field for token: -->
+            {{ form.hidden_tag() }}
+
+            <!-- Grouping form fields: -->
+            <fieldset class="form-group">
+
+                <!-- Section title: -->
+                <legend class="border-bottom mb-4">{{ _("Reset Password") }}</legend>
+
+                <!-- Container for the password field: -->
+                <div class="form-group">
+
+                    <!-- Field description: -->
+                    {{ form.password.label(class="form-control-label") }}
+
+                    <!-- Condition when error occurs: -->
+                    {% if form.password.errors %}
+
+                        <!-- Taking error type: -->
+                        {{ form.password(class="form-control form-control-lg is-invalid") }}
+
+                        <!-- Container for error notification: -->
+                        <div class="invalid-feedback">
+
+                            <!-- Cycle to errors display: -->
+                            {% for error in form.password.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+
+                        </div>
+
+                    <!-- Condition when NO error occurs: -->
+                    {% else %}
+
+                        <!-- Passing field contents: -->
+                        {{ form.password(class="form-control form-control-lg") }}
+
+                    {% endif %}
+                </div>
+
+                <!-- Container for the password confirmation field: -->
+                <div class="form-group">
+
+                    <!-- Field description: -->
+                    {{ form.confirm_password.label(class="form-control-label") }}
+
+                    <!-- Condition when error occurs: -->
+                    {% if form.confirm_password.errors %}
+
+                        <!-- Taking error type: -->
+                        {{ form.confirm_password(class="form-control form-control-lg is-invalid") }}
+
+                        <!-- Container for error notification: -->
+                        <div class="invalid-feedback">
+
+                            <!-- Cycle to errors display: -->
+                            {% for error in form.confirm_password.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+
+                        </div>
+
+                    <!-- Condition when NO error occurs: -->
+                    {% else %}
+
+                        <!-- Passing field contents: -->
+                        {{ form.confirm_password(class="form-control form-control-lg") }}
+
+                    {% endif %}
+                </div>
+            </fieldset>
+
+            <!-- Container for the submit button: -->
+            <div class="form-group">
+
+                <!-- Submit button -->
+                {{ form.submit(class="btn btn-outline-info") }}
+
+            </div>
+        </form>
+    </div>
+{% endblock content %}

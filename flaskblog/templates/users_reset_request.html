@@ -1,0 +1,63 @@
+<!-- Page for email token to change user's password -->
+
+<!-- Connection to layout: -->
+{% extends "layout.html" %}
+{% block content %}
+
+    <!-- Container for page content: -->
+    <div class="content-section">
+
+        <!-- Container for the page form: -->
+        <form method="POST" action="">
+
+            <!-- Hidden field for token: -->
+            {{ form.hidden_tag() }}
+
+            <!-- Grouping form fields: -->
+            <fieldset class="form-group">
+
+                <!-- Section title: -->
+                <legend class="border-bottom mb-4">{{ _("Reset Password") }}</legend>
+
+                <!-- Container for an email field: -->
+                <div class="form-group">
+
+                    <!-- Field description: -->
+                    {{ form.email.label(class="form-control-label") }}
+
+                    <!-- Condition when error occurs: -->
+                    {% if form.email.errors %}
+
+                        <!-- Taking error type: -->
+                        {{ form.email(class="form-control form-control-lg is-invalid") }}
+
+                        <!-- Container for error notification: -->
+                        <div class="invalid-feedback">
+
+                            <!-- Cycle to errors display: -->
+                            {% for error in form.email.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+
+                        </div>
+
+                    <!-- Condition when error NOT occurs: -->
+                    {% else %}
+
+                        <!-- Passing field contents: -->
+                        {{ form.email(class="form-control form-control-lg") }}
+
+                    {% endif %}
+                </div>
+            </fieldset>
+
+            <!-- Container for the submit button: -->
+            <div class="form-group">
+
+                <!-- Submit button -->
+                {{ form.submit(class="btn btn-outline-info") }}
+
+            </div>
+        </form>
+    </div>
+{% endblock content %}

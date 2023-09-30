@@ -1,0 +1,137 @@
+<!-- User account management page -->
+
+<!-- Connection to layout: -->
+{% extends "layout.html" %}
+{% block content %}
+
+    <!-- Container for page content: -->
+    <div class="content-section">
+
+        <!-- Container for user information: -->
+        <div class="media">
+
+            <!-- Profile picture: -->
+            <img class="rounded-circle account-img" src="{{ profile_picture }}">
+
+            <!-- Container for username and email: -->
+            <div class="media-body">
+
+                <!-- Username: -->
+                <h2 class="account-heading">{{ current_user.username }}</h2>
+
+                <!-- User email: -->
+                <p class="text-secondary">{{ current_user.email }}</p>
+
+            </div>
+        </div>
+
+        <!-- Container for the page form: -->
+        <form method="POST" action="" enctype="multipart/form-data">
+
+            <!-- Hidden field for token: -->
+            {{ form.hidden_tag() }}
+
+            <!-- Grouping form fields: -->
+            <fieldset class="form-group">
+
+                <!-- Section title: -->
+                <legend class="border-bottom mb-4">{{ _("Account Info") }}</legend>
+
+                <!-- Container for the username field: -->
+                <div class="form-group">
+
+                    <!-- Field description: -->
+                    {{ form.username.label(class="form-control-label") }}
+
+                    <!-- Condition when error occurs: -->
+                    {% if form.username.errors %}
+
+                        <!-- Taking error type: -->
+                        {{ form.username(class="form-control form-control-lg is-invalid") }}
+
+                        <!-- Container for error notification: -->
+                        <div class="invalid-feedback">
+
+                            <!-- Cycle to errors display: -->
+                            {% for error in form.username.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+
+                        </div>
+
+                    <!-- Condition when NO error occurs: -->
+                    {% else %}
+
+                        <!-- Passing field contents: -->
+                        {{ form.username(class="form-control form-control-lg") }}
+
+                    {% endif %}
+                </div>
+
+                <!-- Container for an email field: -->
+                <div class="form-group">
+
+                    <!-- Field description: -->
+                    {{ form.email.label(class="form-control-label") }}
+
+                    <!-- Condition when error occurs: -->
+                    {% if form.email.errors %}
+
+                        <!-- Taking error type: -->
+                        {{ form.content(class="form-control form-control-lg is-invalid") }}
+
+                        <!-- Container for error notification: -->
+                        <div class="invalid-feedback">
+
+                            <!-- Cycle to errors display: -->
+                            {% for error in form.content.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+
+                        </div>
+
+                    <!-- Condition when error NOT occurs: -->
+                    {% else %}
+
+                        <!-- Passing field contents: -->
+                        {{ form.email(class="form-control form-control-lg") }}
+
+                    {% endif %}
+                </div>
+
+                <!-- Container for the image field: -->
+                <div class="form-group">
+
+                    <!-- Field description: -->
+                    <div>{{ form.picture.label() }}</div>
+
+                    <!-- Field for a picture input: -->
+                    {{ form.picture(class="fileUpload") }}
+
+                    <!-- Condition when error occurs: -->
+                    {% if form.picture.errors %}
+
+                        <!-- Cycle to errors display: -->
+                        {% for error in form.picture.errors %}
+                            <span class="text-danger">{{ error }}</span><br>
+                        {% endfor %}
+
+                    {% endif %}
+                </div>
+            </fieldset>
+
+            <!-- Container for buttons: -->
+            <div class="form-group d-flex justify-content-between mx-0">
+
+                <!-- Submit data button: -->
+                {{ form.submit(class="btn btn-secondary") }}
+
+                <!-- Go back button: -->
+                <a class="btn btn-outline-secondary" type="button" href="{{ url_for('main.home') }}">
+                    {{ _("Close") }}
+                </a>
+
+            </div>
+        </form>
+    </div>
+{% endblock content %}

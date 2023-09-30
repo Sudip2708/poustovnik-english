@@ -1,0 +1,99 @@
+<!-- Post creation page: -->
+
+<!-- Connection to layout: -->
+{% extends "layout.html" %}
+{% block content %}
+
+    <!-- Main container for the page's content: -->
+    <div class="content-section">
+
+        <!-- Container for the page form: -->
+        <form method="POST" action="">
+
+            <!-- Hidden field for token: -->
+            {{ form.hidden_tag() }}
+
+            <!-- Grouping form fields: -->
+            <fieldset class="form-group">
+
+                <!-- Section title: -->
+                <legend class="border-bottom mb-4">{{ title }}</legend>
+
+                <!-- Container for the post title field: -->
+                <div class="form-group">
+
+                    <!-- Field description: -->
+                    {{ form.title.label(class="form-control-label") }}
+
+                    <!-- Condition when error occurs: -->
+                    {% if form.title.errors %}
+
+                        <!-- Taking error type: -->
+                        {{ form.title(class="form-control form-control-lg is-invalid") }}
+
+                        <!-- Container for error notification: -->
+                        <div class="invalid-feedback">
+
+                            <!-- Cycle to errors display: -->
+                            {% for error in form.title.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+
+                        </div>
+
+                    <!-- Condition when NO error occurs: -->
+                    {% else %}
+
+                        <!-- Passing field contents: -->
+                        {{ form.title(class="form-control form-control-lg") }}
+
+                    {% endif %}
+                </div>
+
+                <!-- Post content field: -->
+                <div class="form-group" rows="10">
+
+                    <!-- Field description: -->
+                    {{ form.content.label(class="form-control-label") }}
+
+                    <!-- Condition when error occurs: -->
+                    {% if form.content.errors %}
+
+                        <!-- Taking error type: -->
+                        {{ form.content(class="form-control form-control-lg is-invalid") }}
+
+                        <!-- Container for error notification: -->
+                        <div class="invalid-feedback">
+
+                            <!-- Cycle to errors display: -->
+                            {% for error in form.content.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+
+                        </div>
+
+                    <!-- Condition when error NOT occurs: -->
+                    {% else %}
+
+                        <!-- Passing field contents: -->
+                        {{ form.content(class="form-control form-control-lg input-hight") }}
+
+                    {% endif %}
+                </div>
+            </fieldset>
+
+            <!-- Container for buttons: -->
+            <div class="form-group d-flex justify-content-between mx-0">
+
+                <!-- Submit data button: -->
+                {{ form.submit(class="btn btn-secondary") }}
+
+                <!-- Go back button: -->
+                <a class="btn btn-outline-secondary" type="button" href="{{ url_for('main.home') }}">
+                    {{ _("Close") }}
+                </a>
+
+            </div>
+        </form>
+    </div>
+{% endblock content %}

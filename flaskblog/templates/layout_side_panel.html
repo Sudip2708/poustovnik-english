@@ -1,0 +1,78 @@
+<!-- Sidebar template extension (linked in layout.html)-->
+
+<!-- Main container for the sidebar: -->
+<div class="col-md-4">
+
+    <!-- Sub-container for the sidebar: -->
+    <div class="content-section">
+
+        <!-- Condition to show sidebar if we are on the About page: -->
+        {% if links %}
+
+            <!-- Container for sidebar title and subtitle: -->
+            <div class="article-metadata mb-3">
+                <h3 class="mt-2 mb-3">{{ _("Links") }}</h3>
+                <p class="text-muted">{{ _("Here are some links you might find useful") }}</p>
+            </div>
+
+            <!-- Container for selected instructional posts: -->
+            <div class="article-metadata mb-3">
+
+                <!-- Display condition according to page localization: -->
+                {% if language == "en" %}
+                    <p><a href={{ url_for('posts.post', post_id='28') }} >{{ _("What you can do here?") }}</a></p>
+                    <p><a href={{ url_for('posts.post', post_id='30') }} >{{ _("The changes I made") }}</a></p>
+                    <p><a href={{ url_for('posts.post', post_id='32') }} >{{ _("A known issue") }}</a></p>
+                {% else %}
+                    <p><a href={{ url_for('posts.post', post_id='29') }} >{{ _("What you can do here?") }}</a></p>
+                    <p><a href={{ url_for('posts.post', post_id='31') }} >{{ _("The changes I made") }}</a></p>
+                    <p><a href={{ url_for('posts.post', post_id='33') }} >{{ _("A known issue") }}</a></p>
+                {% endif %}
+            </div>
+
+            <!-- Cycle for imported links (about_text): -->
+            {% for name, url, trgt, description in links %}
+                <p>
+                    <a href={{ url }} target={{ trgt }}>{{ name }}</a><br>
+                    <small class="text-muted">{{ description }}</small>
+                </p>
+            {% endfor %}
+
+        <!-- Condition to show sidebar if we are NOT on the About page: -->
+        {% else %}
+
+            <!-- Condition for displaying the sidebar if the user is logged in: -->
+            {% if current_user.is_authenticated %}
+
+                <!-- Main container for profile picture and username: -->
+                <div class="article-metadata mb-3">
+
+                    <!-- Sub-container for profile picture and username: -->
+                    <div class="row">
+
+                        <!-- Profile picture: -->
+                        <img class="account-img rounded ml-3 mb-3 mt-2"
+                             src="{{ url_for('static', filename='profile_pictures/' + current_user.profile_picture) }}">
+
+                        <!-- Username: -->
+                        <a class="align-self-end sp-name ml-3 mb-3"
+                           href="{{ url_for('posts.user_posts', username=current_user.username) }}">
+                            {{ current_user.username }}
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Extension link to the original sidebar template: -->
+                {% include "layout_side_panel_old.html" %}
+
+            <!-- Condition for displaying the sidebar if the user is NOT logged in: -->
+            {% else %}
+
+                <!-- Extension link to the original sidebar template: -->
+                {% include "layout_side_panel_old.html" %}
+
+            {% endif %}
+        {% endif %}
+    </div>
+</div>

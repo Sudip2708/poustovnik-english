@@ -1,0 +1,416 @@
+# Czech translations for PROJECT.
+# Copyright (C) 2023 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2023-09-21 16:36+0200\n"
+"PO-Revision-Date: 2023-09-05 16:22+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: cs\n"
+"Language-Team: cs <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: main/about_texts.py:20
+msgid "...and thank you Corey!"
+msgstr "...a děkuji i tobě Corey!"
+
+#: main/about_texts.py:21
+msgid ""
+"This pages are based on a YouTube video tutorial by Corey Schafer. They "
+"are made in Flask and they are my first real project and also real proof "
+"of Corey great teaching skills."
+msgstr ""
+"Tyto stránky jsou postavené na základě YouTube výukových videí od Corey "
+"Schafer. Jsou dělané ve Flasku a jsou mým prvním projektem, a zároveň i "
+"důkazem, jak moc dobrý je Corey Schafer učitel."
+
+#: main/about_texts.py:24
+msgid "About me"
+msgstr "O mě"
+
+#: main/about_texts.py:25
+msgid ""
+"I am quite newbie in the programming world. I've been studying Python for"
+" about a year and a half, and recently I completed a three-month course "
+"on creating web applications. So I was looking for some project to "
+"combine and practice new skills and found this. And I was perfect."
+msgstr ""
+"Jsem nováčkem ve světe programování. Pythonu se věnuji rok a půl a na "
+"konci srpna 2023,  jsem dokončil tříměsíční kurz programátora webových "
+"aplikací od firmy IT Network. Poté jsem se začal rozhlížet po nějakém "
+"projektu, který by kombinoval nově nabité zkušenosti a s kterým bych se "
+"mohl následně presentovat při hledání práce. A našel jsem tohle :-)"
+
+#: main/about_texts.py:30
+msgid "Purpose of this page"
+msgstr "Co vše jsem se zde naučil?"
+
+#: main/about_texts.py:31
+msgid ""
+"The main purpose of this page is just to present my current level to a "
+"potential employer and apart the fact I learned a lot by doing them they "
+"don't have a deeper meaning."
+msgstr ""
+"Největším přínosem, bylo propojení a procvičení všech tří hlavních "
+"aspektů, kterým jsem se do teď věnoval (Python, web a databáze) do "
+"jednoho seskupujícího celku (Flask). Seznámení se strukturou Flasku a "
+"poznání některých jeho komponent. A to vše příjemnou a zábavnou formou."
+
+#: main/about_texts.py:33
+msgid "Sharing is caring"
+msgstr "Sharing is caring"
+
+#: main/about_texts.py:34
+msgid ""
+"Anything here is free to use. And if you have some question about this "
+"page or you have a job offer don't hesitate to ask. My email is in "
+"linkedin profile :-)"
+msgstr ""
+"Cokoliv, co zde najdete je libovolně k dispozici a pokud byste měli "
+"nějaký dotaz, týkající se těchto stránek, nebo pracovní nabídku, email na"
+" mě najdete v LinkedIn profilu."
+
+#: main/about_texts.py:38
+msgid "Wish you all Wonderful Life..."
+msgstr "Ještě jednou děkuji za návštěvu a přeji příjemný život..."
+
+#: main/about_texts.py:46
+msgid "Tutorial by Corey Schafer"
+msgstr "Výuková videa od Corey Schafer"
+
+#: main/about_texts.py:49
+msgid "(link to Corey Schafer youtube tutorial)"
+msgstr "(odkaz na Corey Schafer youtube tutoriál)"
+
+#: main/about_texts.py:51
+msgid "Full code description (Czech)"
+msgstr "Kód s podrobným rozborem"
+
+#: main/about_texts.py:54
+msgid "(code analysis in Czech)"
+msgstr "(podrobný rozbor kódu v češtině)"
+
+#: main/about_texts.py:56
+msgid "Code in readable form (English)"
+msgstr "Best practice"
+
+#: main/about_texts.py:59
+msgid "(code in English transcribed into readable notation)"
+msgstr "(kód v angličtině přepsaný do čitelného zápisu dodržující standard)"
+
+#: main/about_texts.py:61
+msgid "My LinkedIn"
+msgstr "Můj LinkedIn"
+
+#: main/about_texts.py:64
+msgid "(link to my LinkedIn)"
+msgstr "(odkaz na můj LinkedIn)"
+
+#: posts/forms.py:43
+msgid "Title"
+msgstr "Nadpis"
+
+#: posts/forms.py:48
+msgid "Content"
+msgstr "Obsah"
+
+#: posts/forms.py:53
+msgid "Post"
+msgstr "Uožit"
+
+#: posts/routes.py:110
+msgid "Your post has been created!"
+msgstr "Váš příspěvek byl vytvořen!"
+
+#: posts/routes.py:116 templates/layout.html:81
+msgid "New Post"
+msgstr "Nový příspěvek"
+
+#: posts/routes.py:241
+msgid "Your post has been updated!"
+msgstr "Váš příspěvek byl aktualizován!"
+
+#: posts/routes.py:252
+msgid "Update Post"
+msgstr "Upravit příspěvek"
+
+#: posts/routes.py:308
+msgid "Your post has been deleted!"
+msgstr "Váš příspěvek byl smazán!"
+
+#: templates/layout.html:39 templates/layout.html:41 templates/layout.html:59
+msgid "Flask Blog"
+msgstr "Poustovník"
+
+#: templates/layout.html:72
+msgid "Home"
+msgstr "Domů"
+
+#: templates/layout.html:73
+msgid "About"
+msgstr "O této stránce"
+
+#: templates/layout.html:82
+msgid "Account"
+msgstr "Nastavení"
+
+#: templates/layout.html:83
+msgid "Logout"
+msgstr "Odhlásit se"
+
+#: templates/layout.html:85 users/forms.py:179
+msgid "Login"
+msgstr "Přihlásit se"
+
+#: templates/layout.html:86
+msgid "Register"
+msgstr "Registrovat"
+
+#: templates/layout.html:94
+msgid "Switch to Czech"
+msgstr "Přepnout do Angličtiny"
+
+#: templates/layout_side_panel.html:14
+msgid "Links"
+msgstr "Odkazy"
+
+#: templates/layout_side_panel.html:15
+msgid "Here are some links you might find useful"
+msgstr "Zde je pár odkazů, které by se mohli hodit"
+
+#: templates/layout_side_panel.html:23 templates/layout_side_panel.html:27
+msgid "What you can do here?"
+msgstr "Co vše zde můžete dělat?"
+
+#: templates/layout_side_panel.html:24 templates/layout_side_panel.html:28
+msgid "The changes I made"
+msgstr "Změny, které jsem provedl"
+
+#: templates/layout_side_panel.html:25 templates/layout_side_panel.html:29
+msgid "A known issue"
+msgstr "Známá chyba"
+
+#: templates/layout_side_panel_old.html:4
+msgid "Our Sidebar"
+msgstr "Postranní panel"
+
+#: templates/layout_side_panel_old.html:7
+msgid "You can put any information here you'd like."
+msgstr "Tento panel je nefunkční a slouží jen pro nastínění dalších možností :-)"
+
+#: templates/layout_side_panel_old.html:11
+msgid "Latest Posts"
+msgstr "Nové příspěvky"
+
+#: templates/layout_side_panel_old.html:12
+msgid "Announcements"
+msgstr "Oznámení"
+
+#: templates/layout_side_panel_old.html:13
+msgid "Calendars"
+msgstr "Kalendář"
+
+#: templates/layout_side_panel_old.html:14
+msgid "etc"
+msgstr "atd"
+
+#: templates/main_about.html:12
+msgid "About this page"
+msgstr "O této stránce"
+
+#: templates/main_about.html:13
+msgid "First of all, thank you for visiting"
+msgstr "Nejprve mi dovolte poděkovat za návštěvu"
+
+#: templates/main_home.html:62 templates/posts_post.html:79
+msgid "Translate"
+msgstr "Zobrazit překlad"
+
+#: templates/posts_create_post.html:93 templates/posts_post.html:158
+#: templates/users_account.html:131
+msgid "Close"
+msgstr "Zavřít"
+
+#: templates/posts_post.html:73
+msgid "Back to original"
+msgstr "Zobrazit originál"
+
+#: templates/posts_post.html:98 users/forms.py:216
+msgid "Update"
+msgstr "Uložit změny"
+
+#: templates/posts_post.html:103 templates/posts_post.html:163
+msgid "Delete"
+msgstr "Smazat"
+
+#: templates/posts_post.html:113 templates/posts_post.html:124
+msgid "Back"
+msgstr "Zpět"
+
+#: templates/posts_post.html:145
+msgid "Delete Post?"
+msgstr "Smazat příspěvek?"
+
+#: templates/posts_user_posts.html:8
+msgid "Posts by"
+msgstr "Příspěvky od uživatele"
+
+#: templates/users_account.html:38
+msgid "Account Info"
+msgstr "Informace o uživateli"
+
+#: templates/users_login.html:20
+msgid "Log In"
+msgstr "Přihlásit se"
+
+#: templates/users_login.html:104
+msgid "Forgot Password?"
+msgstr "Zapomenuté heslo?"
+
+#: templates/users_login.html:115
+msgid "Need An Account?"
+msgstr "Potřebujete založit účet?"
+
+#: templates/users_login.html:116
+msgid "Sign Up Now"
+msgstr "Založit účet"
+
+#: templates/users_register.html:20
+msgid "Join Today"
+msgstr "Vytvořit účet"
+
+#: templates/users_register.html:161
+msgid "Already Have An Account?"
+msgstr "Máte již účet?"
+
+#: templates/users_register.html:162
+msgid "Sign In"
+msgstr "Přihlásit se"
+
+#: templates/users_reset_request.html:20 templates/users_reset_token.html:20
+#: users/forms.py:364
+msgid "Reset Password"
+msgstr "Změna hesla"
+
+#: templates/errors/403.html:11
+msgid "You don't have permission to do that (403)"
+msgstr "Bohužel nemáte patřičné oprávnění (403)"
+
+#: templates/errors/403.html:14
+msgid "Please check your account and try again"
+msgstr "rosím, ověřte si stav svého účtu a zkuste to znovu"
+
+#: templates/errors/404.html:11
+msgid "Oops. Page Not Found (404)"
+msgstr "Stránka nenalezena (404)"
+
+#: templates/errors/404.html:14
+msgid "That page does not exist. Please try a different location"
+msgstr ""
+"Stránka, na kterou se snažíte vstoupit, neexistuje. Prosím zkontrolujte "
+"svoje zadání"
+
+#: templates/errors/500.html:11
+msgid "Something went wrong (500)"
+msgstr "Něco se pokazilo (500)"
+
+#: templates/errors/500.html:14
+msgid ""
+"We're experiencing some trouble on our end. Please try again in the near "
+"future"
+msgstr "Potíže na naší straně. Omlouváme se. Zkuste to prosím později."
+
+#: users/forms.py:70 users/forms.py:201
+msgid "Username"
+msgstr "Uživatelské jméno"
+
+#: users/forms.py:75 users/forms.py:165 users/forms.py:206 users/forms.py:303
+msgid "Email"
+msgstr "Email"
+
+#: users/forms.py:80 users/forms.py:170 users/forms.py:354
+msgid "Password"
+msgstr "Heslo"
+
+#: users/forms.py:85 users/forms.py:359
+msgid "Confirm Password"
+msgstr "Potvrdit heslo"
+
+#: users/forms.py:90
+msgid "Sign Up"
+msgstr "Vytvořit účet"
+
+#: users/forms.py:117 users/forms.py:250
+msgid "That username is taken. Please choose a different one."
+msgstr "ámi zadané uživatelské jméno je již zabráno. Prosím vyberte jiné"
+
+#: users/forms.py:144 users/forms.py:284
+msgid "That email is taken. Please choose a different one."
+msgstr ""
+"Vámi zadaný email má již existující účet. Prosím vyberte jiný, nebo "
+"přejděte do sekce přihlášení"
+
+#: users/forms.py:175
+msgid "Remember Me"
+msgstr "Zapamatovat si mě"
+
+#: users/forms.py:211
+msgid "Update Profile Picture"
+msgstr "Změna profilového obrázku:"
+
+#: users/forms.py:308
+msgid "Request Password Reset"
+msgstr "Žádost o zaslání hesla"
+
+#: users/forms.py:335
+msgid "There is no account with that email. You must register first."
+msgstr "Pro vámi zadaný email, neexistuje účet. Prosím zkontrolujte zadání"
+
+#: users/routes.py:130
+msgid "Your account has been created! You are now able to log in"
+msgstr "áš účet je založen! Nyní se můžete přihlásit"
+
+#: users/routes.py:209
+msgid "Login Unsuccessful. Please check email and password"
+msgstr "Přihlášení proběhlo neúspěšně. Prosím zkontrolujte zadané údaje"
+
+#: users/routes.py:307
+msgid "Your account has been updated!"
+msgstr "Váš účet by aktualizován!"
+
+#: users/routes.py:383
+msgid "An email has been sent with instructions to reset your password."
+msgstr "Na vámi zadaný email byla odeslaná zpráva s instrukcemi pro změnu hesla"
+
+#: users/routes.py:440
+msgid "That is an invalid or expired token"
+msgstr "oto je neplatný již neplatný odkaz. Prosím zažádejte o nový"
+
+#: users/routes.py:455
+msgid "Your password has been updated! You are now able to log in"
+msgstr "Vaše heslo bylo změněno. Nyní se můžete přihlásit"
+
+#: users/utils.py:108
+msgid "Password Reset Request"
+msgstr "Žádost o změnu hesla"
+
+#: users/utils.py:111
+msgid "To reset your password, visit the following link:"
+msgstr "Pokud si přejete změnit své heslo, přejděte na následující odkaz"
+
+#: users/utils.py:113
+msgid ""
+"If you did not make this request then simply ignore this email and no "
+"changes will be made."
+msgstr ""
+"Pokud jste o změnu hesla nežádali, ignorujte tento email a žádná změna "
+"nebude provedena."
+

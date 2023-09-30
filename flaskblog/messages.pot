@@ -1,0 +1,394 @@
+# Translations template for PROJECT.
+# Copyright (C) 2023 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2023-09-21 16:36+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: main/about_texts.py:20
+msgid "...and thank you Corey!"
+msgstr ""
+
+#: main/about_texts.py:21
+msgid ""
+"This pages are based on a YouTube video tutorial by Corey Schafer. They "
+"are made in Flask and they are my first real project and also real proof "
+"of Corey great teaching skills."
+msgstr ""
+
+#: main/about_texts.py:24
+msgid "About me"
+msgstr ""
+
+#: main/about_texts.py:25
+msgid ""
+"I am quite newbie in the programming world. I've been studying Python for"
+" about a year and a half, and recently I completed a three-month course "
+"on creating web applications. So I was looking for some project to "
+"combine and practice new skills and found this. And I was perfect."
+msgstr ""
+
+#: main/about_texts.py:30
+msgid "Purpose of this page"
+msgstr ""
+
+#: main/about_texts.py:31
+msgid ""
+"The main purpose of this page is just to present my current level to a "
+"potential employer and apart the fact I learned a lot by doing them they "
+"don't have a deeper meaning."
+msgstr ""
+
+#: main/about_texts.py:33
+msgid "Sharing is caring"
+msgstr ""
+
+#: main/about_texts.py:34
+msgid ""
+"Anything here is free to use. And if you have some question about this "
+"page or you have a job offer don't hesitate to ask. My email is in "
+"linkedin profile :-)"
+msgstr ""
+
+#: main/about_texts.py:38
+msgid "Wish you all Wonderful Life..."
+msgstr ""
+
+#: main/about_texts.py:46
+msgid "Tutorial by Corey Schafer"
+msgstr ""
+
+#: main/about_texts.py:49
+msgid "(link to Corey Schafer youtube tutorial)"
+msgstr ""
+
+#: main/about_texts.py:51
+msgid "Full code description (Czech)"
+msgstr ""
+
+#: main/about_texts.py:54
+msgid "(code analysis in Czech)"
+msgstr ""
+
+#: main/about_texts.py:56
+msgid "Code in readable form (English)"
+msgstr ""
+
+#: main/about_texts.py:59
+msgid "(code in English transcribed into readable notation)"
+msgstr ""
+
+#: main/about_texts.py:61
+msgid "My LinkedIn"
+msgstr ""
+
+#: main/about_texts.py:64
+msgid "(link to my LinkedIn)"
+msgstr ""
+
+#: posts/forms.py:43
+msgid "Title"
+msgstr ""
+
+#: posts/forms.py:48
+msgid "Content"
+msgstr ""
+
+#: posts/forms.py:53
+msgid "Post"
+msgstr ""
+
+#: posts/routes.py:110
+msgid "Your post has been created!"
+msgstr ""
+
+#: posts/routes.py:116 templates/layout.html:81
+msgid "New Post"
+msgstr ""
+
+#: posts/routes.py:241
+msgid "Your post has been updated!"
+msgstr ""
+
+#: posts/routes.py:252
+msgid "Update Post"
+msgstr ""
+
+#: posts/routes.py:308
+msgid "Your post has been deleted!"
+msgstr ""
+
+#: templates/layout.html:39 templates/layout.html:41 templates/layout.html:59
+msgid "Flask Blog"
+msgstr ""
+
+#: templates/layout.html:72
+msgid "Home"
+msgstr ""
+
+#: templates/layout.html:73
+msgid "About"
+msgstr ""
+
+#: templates/layout.html:82
+msgid "Account"
+msgstr ""
+
+#: templates/layout.html:83
+msgid "Logout"
+msgstr ""
+
+#: templates/layout.html:85 users/forms.py:179
+msgid "Login"
+msgstr ""
+
+#: templates/layout.html:86
+msgid "Register"
+msgstr ""
+
+#: templates/layout.html:94
+msgid "Switch to Czech"
+msgstr ""
+
+#: templates/layout_side_panel.html:14
+msgid "Links"
+msgstr ""
+
+#: templates/layout_side_panel.html:15
+msgid "Here are some links you might find useful"
+msgstr ""
+
+#: templates/layout_side_panel.html:23 templates/layout_side_panel.html:27
+msgid "What you can do here?"
+msgstr ""
+
+#: templates/layout_side_panel.html:24 templates/layout_side_panel.html:28
+msgid "The changes I made"
+msgstr ""
+
+#: templates/layout_side_panel.html:25 templates/layout_side_panel.html:29
+msgid "A known issue"
+msgstr ""
+
+#: templates/layout_side_panel_old.html:4
+msgid "Our Sidebar"
+msgstr ""
+
+#: templates/layout_side_panel_old.html:7
+msgid "You can put any information here you'd like."
+msgstr ""
+
+#: templates/layout_side_panel_old.html:11
+msgid "Latest Posts"
+msgstr ""
+
+#: templates/layout_side_panel_old.html:12
+msgid "Announcements"
+msgstr ""
+
+#: templates/layout_side_panel_old.html:13
+msgid "Calendars"
+msgstr ""
+
+#: templates/layout_side_panel_old.html:14
+msgid "etc"
+msgstr ""
+
+#: templates/main_about.html:12
+msgid "About this page"
+msgstr ""
+
+#: templates/main_about.html:13
+msgid "First of all, thank you for visiting"
+msgstr ""
+
+#: templates/main_home.html:62 templates/posts_post.html:79
+msgid "Translate"
+msgstr ""
+
+#: templates/posts_create_post.html:93 templates/posts_post.html:158
+#: templates/users_account.html:131
+msgid "Close"
+msgstr ""
+
+#: templates/posts_post.html:73
+msgid "Back to original"
+msgstr ""
+
+#: templates/posts_post.html:98 users/forms.py:216
+msgid "Update"
+msgstr ""
+
+#: templates/posts_post.html:103 templates/posts_post.html:163
+msgid "Delete"
+msgstr ""
+
+#: templates/posts_post.html:113 templates/posts_post.html:124
+msgid "Back"
+msgstr ""
+
+#: templates/posts_post.html:145
+msgid "Delete Post?"
+msgstr ""
+
+#: templates/posts_user_posts.html:8
+msgid "Posts by"
+msgstr ""
+
+#: templates/users_account.html:38
+msgid "Account Info"
+msgstr ""
+
+#: templates/users_login.html:20
+msgid "Log In"
+msgstr ""
+
+#: templates/users_login.html:104
+msgid "Forgot Password?"
+msgstr ""
+
+#: templates/users_login.html:115
+msgid "Need An Account?"
+msgstr ""
+
+#: templates/users_login.html:116
+msgid "Sign Up Now"
+msgstr ""
+
+#: templates/users_register.html:20
+msgid "Join Today"
+msgstr ""
+
+#: templates/users_register.html:161
+msgid "Already Have An Account?"
+msgstr ""
+
+#: templates/users_register.html:162
+msgid "Sign In"
+msgstr ""
+
+#: templates/users_reset_request.html:20 templates/users_reset_token.html:20
+#: users/forms.py:364
+msgid "Reset Password"
+msgstr ""
+
+#: templates/errors/403.html:11
+msgid "You don't have permission to do that (403)"
+msgstr ""
+
+#: templates/errors/403.html:14
+msgid "Please check your account and try again"
+msgstr ""
+
+#: templates/errors/404.html:11
+msgid "Oops. Page Not Found (404)"
+msgstr ""
+
+#: templates/errors/404.html:14
+msgid "That page does not exist. Please try a different location"
+msgstr ""
+
+#: templates/errors/500.html:11
+msgid "Something went wrong (500)"
+msgstr ""
+
+#: templates/errors/500.html:14
+msgid ""
+"We're experiencing some trouble on our end. Please try again in the near "
+"future"
+msgstr ""
+
+#: users/forms.py:70 users/forms.py:201
+msgid "Username"
+msgstr ""
+
+#: users/forms.py:75 users/forms.py:165 users/forms.py:206 users/forms.py:303
+msgid "Email"
+msgstr ""
+
+#: users/forms.py:80 users/forms.py:170 users/forms.py:354
+msgid "Password"
+msgstr ""
+
+#: users/forms.py:85 users/forms.py:359
+msgid "Confirm Password"
+msgstr ""
+
+#: users/forms.py:90
+msgid "Sign Up"
+msgstr ""
+
+#: users/forms.py:117 users/forms.py:250
+msgid "That username is taken. Please choose a different one."
+msgstr ""
+
+#: users/forms.py:144 users/forms.py:284
+msgid "That email is taken. Please choose a different one."
+msgstr ""
+
+#: users/forms.py:175
+msgid "Remember Me"
+msgstr ""
+
+#: users/forms.py:211
+msgid "Update Profile Picture"
+msgstr ""
+
+#: users/forms.py:308
+msgid "Request Password Reset"
+msgstr ""
+
+#: users/forms.py:335
+msgid "There is no account with that email. You must register first."
+msgstr ""
+
+#: users/routes.py:130
+msgid "Your account has been created! You are now able to log in"
+msgstr ""
+
+#: users/routes.py:209
+msgid "Login Unsuccessful. Please check email and password"
+msgstr ""
+
+#: users/routes.py:307
+msgid "Your account has been updated!"
+msgstr ""
+
+#: users/routes.py:383
+msgid "An email has been sent with instructions to reset your password."
+msgstr ""
+
+#: users/routes.py:440
+msgid "That is an invalid or expired token"
+msgstr ""
+
+#: users/routes.py:455
+msgid "Your password has been updated! You are now able to log in"
+msgstr ""
+
+#: users/utils.py:108
+msgid "Password Reset Request"
+msgstr ""
+
+#: users/utils.py:111
+msgid "To reset your password, visit the following link:"
+msgstr ""
+
+#: users/utils.py:113
+msgid ""
+"If you did not make this request then simply ignore this email and no "
+"changes will be made."
+msgstr ""
+

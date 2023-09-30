@@ -1,0 +1,18 @@
+<!-- Error notification page 500 -->
+
+<!-- Connection to layout: -->
+{% extends "layout.html" %}
+{% block content %}
+
+    <!-- Container for page content: -->
+    <div class="content-section">
+
+        <!-- Error notification: -->
+        <h1>{{ _("Something went wrong (500)") }}</h1>
+
+        <!-- Error explanation: -->
+        <p>{{ _("We're experiencing some trouble on our end. Please try again in the near future") }}</p>
+
+    </div>
+{% endblock content %}
+
