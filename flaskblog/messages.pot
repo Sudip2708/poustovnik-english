@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-09-21 16:36+0200\n"
+"POT-Creation-Date: 2023-10-01 11:55+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -122,7 +122,7 @@ msgstr ""
 msgid "Your post has been updated!"
 msgstr ""
 
-#: posts/routes.py:252
+#: posts/routes.py:252 templates/posts_post.html:98
 msgid "Update Post"
 msgstr ""
 
@@ -167,19 +167,7 @@ msgid "Links"
 msgstr ""
 
 #: templates/layout_side_panel.html:15
-msgid "Here are some links you might find useful"
-msgstr ""
-
-#: templates/layout_side_panel.html:23 templates/layout_side_panel.html:27
-msgid "What you can do here?"
-msgstr ""
-
-#: templates/layout_side_panel.html:24 templates/layout_side_panel.html:28
-msgid "The changes I made"
-msgstr ""
-
-#: templates/layout_side_panel.html:25 templates/layout_side_panel.html:29
-msgid "A known issue"
+msgid "Here are some links you might find useful."
 msgstr ""
 
 #: templates/layout_side_panel_old.html:4
@@ -218,28 +206,25 @@ msgstr ""
 msgid "Translate"
 msgstr ""
 
-#: templates/posts_create_post.html:93 templates/posts_post.html:158
-#: templates/users_account.html:131
-msgid "Close"
+#: templates/posts_create_post.html:93 templates/posts_post.html:118
+#: templates/posts_post.html:129
+msgid "Back"
 msgstr ""
 
 #: templates/posts_post.html:73
 msgid "Back to original"
 msgstr ""
 
-#: templates/posts_post.html:98 users/forms.py:216
-msgid "Update"
-msgstr ""
-
-#: templates/posts_post.html:103 templates/posts_post.html:163
+#: templates/posts_post.html:103 templates/posts_post.html:168
 msgid "Delete"
 msgstr ""
 
-#: templates/posts_post.html:113 templates/posts_post.html:124
-msgid "Back"
+#: templates/posts_post.html:108 templates/posts_post.html:163
+#: templates/users_account.html:131
+msgid "Close"
 msgstr ""
 
-#: templates/posts_post.html:145
+#: templates/posts_post.html:150
 msgid "Delete Post?"
 msgstr ""
 
@@ -344,6 +329,10 @@ msgstr ""
 
 #: users/forms.py:211
 msgid "Update Profile Picture"
+msgstr ""
+
+#: users/forms.py:216
+msgid "Update"
 msgstr ""
 
 #: users/forms.py:308

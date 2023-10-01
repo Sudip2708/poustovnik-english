@@ -12,7 +12,7 @@
             <!-- Container for sidebar title and subtitle: -->
             <div class="article-metadata mb-3">
                 <h3 class="mt-2 mb-3">{{ _("Links") }}</h3>
-                <p class="text-muted">{{ _("Here are some links you might find useful") }}</p>
+                <p class="text-muted">{{ _("Here are some links you might find useful.") }}</p>
             </div>
 
             <!-- Container for selected instructional posts: -->
@@ -20,13 +20,15 @@
 
                 <!-- Display condition according to page localization: -->
                 {% if language == "en" %}
-                    <p><a href={{ url_for('posts.post', post_id='28') }} >{{ _("What you can do here?") }}</a></p>
-                    <p><a href={{ url_for('posts.post', post_id='30') }} >{{ _("The changes I made") }}</a></p>
-                    <p><a href={{ url_for('posts.post', post_id='32') }} >{{ _("A known issue") }}</a></p>
+                    <p><a href={{ url_for('posts.post', post_id='34') }} >What you can do here?</a></p>
+                    <p><a href={{ url_for('posts.post', post_id='32') }} >Useful tip</a></p>
+                    <p><a href={{ url_for('posts.post', post_id='30') }} >The changes I made</a></p>
+                    <p><a href={{ url_for('posts.post', post_id='28') }} >A known issue</a></p>
                 {% else %}
-                    <p><a href={{ url_for('posts.post', post_id='29') }} >{{ _("What you can do here?") }}</a></p>
-                    <p><a href={{ url_for('posts.post', post_id='31') }} >{{ _("The changes I made") }}</a></p>
-                    <p><a href={{ url_for('posts.post', post_id='33') }} >{{ _("A known issue") }}</a></p>
+                    <p><a href={{ url_for('posts.post', post_id='35') }} >Co zde můžete dělat?</a></p>
+                    <p><a href={{ url_for('posts.post', post_id='33') }} >Užitečný tip</a></p>
+                    <p><a href={{ url_for('posts.post', post_id='31') }} >Změny, které jsem provedl</a></p>
+                    <p><a href={{ url_for('posts.post', post_id='29') }} >Známá chyba</a></p>
                 {% endif %}
             </div>
 
@@ -55,7 +57,7 @@
                              src="{{ url_for('static', filename='profile_pictures/' + current_user.profile_picture) }}">
 
                         <!-- Username: -->
-                        <a class="align-self-end sp-name ml-3 mb-3"
+                        <a class="align-self-end sp-name mb-3"
                            href="{{ url_for('posts.user_posts', username=current_user.username) }}">
                             {{ current_user.username }}
                         </a>

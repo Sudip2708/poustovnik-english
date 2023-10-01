@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-09-21 16:36+0200\n"
+"POT-Creation-Date: 2023-10-01 11:55+0200\n"
 "PO-Revision-Date: 2023-09-05 16:22+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: cs\n"
@@ -124,7 +124,7 @@ msgstr "Obsah"
 
 #: posts/forms.py:53
 msgid "Post"
-msgstr "Uožit"
+msgstr "Uožit změny"
 
 #: posts/routes.py:110
 msgid "Your post has been created!"
@@ -138,7 +138,7 @@ msgstr "Nový příspěvek"
 msgid "Your post has been updated!"
 msgstr "Váš příspěvek byl aktualizován!"
 
-#: posts/routes.py:252
+#: posts/routes.py:252 templates/posts_post.html:98
 msgid "Update Post"
 msgstr "Upravit příspěvek"
 
@@ -183,20 +183,8 @@ msgid "Links"
 msgstr "Odkazy"
 
 #: templates/layout_side_panel.html:15
-msgid "Here are some links you might find useful"
-msgstr "Zde je pár odkazů, které by se mohli hodit"
-
-#: templates/layout_side_panel.html:23 templates/layout_side_panel.html:27
-msgid "What you can do here?"
-msgstr "Co vše zde můžete dělat?"
-
-#: templates/layout_side_panel.html:24 templates/layout_side_panel.html:28
-msgid "The changes I made"
-msgstr "Změny, které jsem provedl"
-
-#: templates/layout_side_panel.html:25 templates/layout_side_panel.html:29
-msgid "A known issue"
-msgstr "Známá chyba"
+msgid "Here are some links you might find useful."
+msgstr "Zde je pár odkazů, které by se mohli hodit."
 
 #: templates/layout_side_panel_old.html:4
 msgid "Our Sidebar"
@@ -234,28 +222,25 @@ msgstr "Nejprve mi dovolte poděkovat za návštěvu"
 msgid "Translate"
 msgstr "Zobrazit překlad"
 
-#: templates/posts_create_post.html:93 templates/posts_post.html:158
-#: templates/users_account.html:131
-msgid "Close"
-msgstr "Zavřít"
+#: templates/posts_create_post.html:93 templates/posts_post.html:118
+#: templates/posts_post.html:129
+msgid "Back"
+msgstr "Zpět"
 
 #: templates/posts_post.html:73
 msgid "Back to original"
 msgstr "Zobrazit originál"
 
-#: templates/posts_post.html:98 users/forms.py:216
-msgid "Update"
-msgstr "Uložit změny"
-
-#: templates/posts_post.html:103 templates/posts_post.html:163
+#: templates/posts_post.html:103 templates/posts_post.html:168
 msgid "Delete"
 msgstr "Smazat"
 
-#: templates/posts_post.html:113 templates/posts_post.html:124
-msgid "Back"
-msgstr "Zpět"
+#: templates/posts_post.html:108 templates/posts_post.html:163
+#: templates/users_account.html:131
+msgid "Close"
+msgstr "Zavřít"
 
-#: templates/posts_post.html:145
+#: templates/posts_post.html:150
 msgid "Delete Post?"
 msgstr "Smazat příspěvek?"
 
@@ -306,7 +291,7 @@ msgstr "Bohužel nemáte patřičné oprávnění (403)"
 
 #: templates/errors/403.html:14
 msgid "Please check your account and try again"
-msgstr "rosím, ověřte si stav svého účtu a zkuste to znovu"
+msgstr "Prosím, ověřte si stav svého účtu a zkuste to znovu"
 
 #: templates/errors/404.html:11
 msgid "Oops. Page Not Found (404)"
@@ -350,7 +335,7 @@ msgstr "Vytvořit účet"
 
 #: users/forms.py:117 users/forms.py:250
 msgid "That username is taken. Please choose a different one."
-msgstr "ámi zadané uživatelské jméno je již zabráno. Prosím vyberte jiné"
+msgstr "Vámi zadané uživatelské jméno je již zabráno. Prosím vyberte jiné"
 
 #: users/forms.py:144 users/forms.py:284
 msgid "That email is taken. Please choose a different one."
@@ -366,6 +351,10 @@ msgstr "Zapamatovat si mě"
 msgid "Update Profile Picture"
 msgstr "Změna profilového obrázku:"
 
+#: users/forms.py:216
+msgid "Update"
+msgstr "Uložit změny"
+
 #: users/forms.py:308
 msgid "Request Password Reset"
 msgstr "Žádost o zaslání hesla"
@@ -376,7 +365,7 @@ msgstr "Pro vámi zadaný email, neexistuje účet. Prosím zkontrolujte zadán�
 
 #: users/routes.py:130
 msgid "Your account has been created! You are now able to log in"
-msgstr "áš účet je založen! Nyní se můžete přihlásit"
+msgstr "Váš účet je založen! Nyní se můžete přihlásit"
 
 #: users/routes.py:209
 msgid "Login Unsuccessful. Please check email and password"
@@ -392,7 +381,7 @@ msgstr "Na vámi zadaný email byla odeslaná zpráva s instrukcemi pro změnu h
 
 #: users/routes.py:440
 msgid "That is an invalid or expired token"
-msgstr "oto je neplatný již neplatný odkaz. Prosím zažádejte o nový"
+msgstr "Toto je neplatný již neplatný odkaz. Prosím zažádejte o nový"
 
 #: users/routes.py:455
 msgid "Your password has been updated! You are now able to log in"
@@ -413,4 +402,5 @@ msgid ""
 msgstr ""
 "Pokud jste o změnu hesla nežádali, ignorujte tento email a žádná změna "
 "nebude provedena."
+
 

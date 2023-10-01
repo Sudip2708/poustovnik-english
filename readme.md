@@ -1,5 +1,5 @@
 # Hi there!
-This is the source code of the application for the website www.poustovnicek.fun <br>
+This is the source code of the application for the website www.poustovnik.fun <br>
 The application is built in Flask (Python) based on a YouTube video tutorial by Corey Schafer: <br>
 https://www.youtube.com/playlist?list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH
 

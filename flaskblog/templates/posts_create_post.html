@@ -89,9 +89,9 @@
                 {{ form.submit(class="btn btn-secondary") }}
 
                 <!-- Go back button: -->
-                <a class="btn btn-outline-secondary" type="button" href="{{ url_for('main.home') }}">
-                    {{ _("Close") }}
-                </a>
+                <button class="btn btn-outline-secondary mt-1" type="button" onclick="history.back()">
+                    {{ _("Back") }}
+                </button>
 
             </div>
         </form>

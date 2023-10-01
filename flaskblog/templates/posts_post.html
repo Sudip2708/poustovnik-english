@@ -93,15 +93,20 @@
                     <div class="mt-1 mb-1">
 
                         <!-- Edit post button: -->
-                        <a class="btn btn-secondary"
+                        <a class="btn btn-info"
                            href="{{ url_for('posts.update_post', post_id=post.id) }}">
-                            {{ _("Update") }}
+                            {{ _("Update Post") }}
                         </a>
 
                         <!-- Delete post button: -->
                         <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal">
                             {{ _("Delete") }}
                         </button>
+
+                        <!-- Close button: -->
+                        <a class="btn btn-secondary" type="button" href="{{ url_for('main.home') }}">
+                            {{ _("Close") }}
+                        </a>
 
                     </div>
 
