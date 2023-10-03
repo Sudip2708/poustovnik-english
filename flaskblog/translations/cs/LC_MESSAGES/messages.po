@@ -62,7 +62,7 @@ msgstr ""
 "Největším přínosem, bylo propojení a procvičení všech tří hlavních "
 "aspektů, kterým jsem se do teď věnoval (Python, web a databáze) do "
 "jednoho seskupujícího celku (Flask). Seznámení se strukturou Flasku a "
-"poznání některých jeho komponent. A to vše příjemnou a zábavnou formou."
+"poznání některých jeho komponent. A v posledním kroku i nastazení stránek, na linuxový server Linode."
 
 #: main/about_texts.py:33
 msgid "Sharing is caring"
@@ -124,7 +124,7 @@ msgstr "Obsah"
 
 #: posts/forms.py:53
 msgid "Post"
-msgstr "Uožit změny"
+msgstr "Uožit"
 
 #: posts/routes.py:110
 msgid "Your post has been created!"
@@ -140,7 +140,7 @@ msgstr "Váš příspěvek byl aktualizován!"
 
 #: posts/routes.py:252 templates/posts_post.html:98
 msgid "Update Post"
-msgstr "Upravit příspěvek"
+msgstr "Upravit"
 
 #: posts/routes.py:308
 msgid "Your post has been deleted!"

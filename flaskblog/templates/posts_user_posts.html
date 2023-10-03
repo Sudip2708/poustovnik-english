@@ -38,6 +38,16 @@
 
                 <!-- Post content: -->
                 <p class="article-content">{{ post.content }}</p>
+
+                <!-- Condition for displaying the post translation link: -->
+                {% if post.language != language %}
+
+                    <!-- Container for the post translation link: -->
+                    <small class="text-muted">
+                        <a href="{{ url_for('main.translate', post_id=post.id) }}">{{ _("Translate") }}</a>
+                    </small>
+
+                {% endif %}
             </div>
         </article>
     {% endfor %}

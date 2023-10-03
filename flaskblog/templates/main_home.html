@@ -30,29 +30,11 @@
                     <small class="text-muted">{{ post.date_posted.strftime("%Y-%m-%d") }}</small>
                 </div>
 
-                <!-- Condition for displaying the post if it is translated: -->
-                {% if translate[0] == post.id %}
+                <!-- Post title: -->
+                <h2><a class="article-title" href="{{ url_for('posts.post', post_id=post.id) }}">{{ post.title }}</a></h2>
 
-                    <!-- Post title: -->
-                    <h2><a class="article-title" href="{{ url_for('posts.post', post_id=post.id) }}">
-                        {{ translate[1] }}</a>
-                    </h2>
-
-                    <!-- Post content: -->
-                    <p class="article-content">{{ translate[2] }}</p>
-
-                <!-- Condition for displaying the post if it is NOT translated: -->
-                {% else %}
-
-                    <!-- Post title: -->
-                    <h2><a class="article-title" href="{{ url_for('posts.post', post_id=post.id) }}">
-                        {{ post.title }}</a>
-                    </h2>
-
-                    <!-- Post content: -->
-                    <p class="article-content">{{ post.content }}</p>
-
-                {% endif %}
+                <!-- Post content: -->
+                <p class="article-content">{{ post.content }}</p>
 
                 <!-- Condition for displaying the post translation link: -->
                 {% if post.language != language %}

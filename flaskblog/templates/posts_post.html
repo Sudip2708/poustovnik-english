@@ -59,28 +59,6 @@
                     <p class="article-content">{{ post.content }}</p>
 
                 {% endif %}
-
-                <!-- Condition for displaying the post translation link: -->
-                {% if post.language != language %}
-
-                    <!-- Container for the post translation link: -->
-                    <small class="text-muted">
-
-                        <!-- Condition for displaying if the post is translated: -->
-                        {% if translate[0] == post.id %}
-
-                            <!-- Link to return the original text: -->
-                            <a href="{{ url_for('posts.post', post_id=post.id) }}">{{ _("Back to original") }}</a>
-
-                        <!-- Condition for displaying if the post is NOT translated: -->
-                        {% else %}
-
-                            <!-- Link to translation: -->
-                            <a href="{{ url_for('main.translate', post_id=post.id) }}">{{ _("Translate") }}</a>
-
-                        {% endif %}
-                    </small>
-                {% endif %}
             </div>
 
             <!-- Condition for displaying post editing tools (if the user is the author of the post): -->
@@ -157,11 +135,6 @@
 
                 <!-- Container for grouping buttons: -->
                 <div class="modal-footer">
-
-                    <!-- Close window button: -->
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                        {{ _("Close") }}
-                    </button>
 
                     <!-- Delete a post button: -->
                     <form action="{{ url_for('posts.delete_post', post_id=post.id) }}" method="POST">
