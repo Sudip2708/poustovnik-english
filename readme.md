@@ -40,6 +40,17 @@ Sudip2708
 - Translate posts that are in a different language. <br> 
 - And, of course, mobile-friendly responsive behavior :-)
 
+
+## Docker
+
+To try the application in Docker, use this command:  
+```bash
+docker run -p 5000:5000 sudip2708/poustovnik_flask
+```  
+The application will be accessible at http://localhost:5000  
+To download the application image from Docker go to: [DockerHub - Poustovnik](https://hub.docker.com/r/sudip2708/poustovnik_flask)
+
+
 ## Program tree-structure:
 ```
 run.py - Application executable file.
